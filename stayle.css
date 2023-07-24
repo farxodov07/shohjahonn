@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    /* animation-name: sheeykh;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation: sheeykh ; */
+    animation: sheeykh 4s infinite  ;
+  }
+  
+  @keyframes sheeykh {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+.container{
+    border: 1px solid gold ;
+    border-right:1px solid yellow ;
+    border-bottom: 1px solid blue ;
+    border-left: 1px solid green;
+    border-top: 1px solid  red;
+    height: 300px;
+    width: 300px;
+}
+.kk{
+    width: 422px;   
+    position: absolute;
+    height: 422px;
+    background-color: #000;
+    border: 1px solid gold;
+    transition: all 1s;
+    animation: shakh 4s infinite alternate ;
+    opacity: 30%;
+
+}
+@keyframes shakh {
+    0%   {transform: rotate(0deg); }
+    100%  {transform: rotate(500deg);}
+
+  }
+/* .kk:hover{
+
+    transform: rotate(500deg);
+    opacity: 30%;
+} */
